@@ -1,4 +1,4 @@
-# 📝 MERN Notes App
+# 📝 Full-stack Notes App
 
 A full-stack **Notes-taking application** built using the **MERN Stack** (MongoDB, Express.js, React.js, Node.js). It allows users to securely **create**, **read**, **update**, and **delete (CRUD)** personal notes. The app uses **JWT-based authentication**, **bcrypt password encryption**, and features a responsive UI built with **Tailwind CSS**.
 
@@ -38,5 +38,6 @@ A full-stack **Notes-taking application** built using the **MERN Stack** (MongoD
 
 ---
 
-🧑‍💻 Author
+## 🧑‍💻 Author
+
 Developed with ❤️ by myself (**Chandranil Adhikary**)
