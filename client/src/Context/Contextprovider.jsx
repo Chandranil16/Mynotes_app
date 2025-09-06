@@ -15,10 +15,15 @@ const Contextprovider = ({ children }) => {
 
   useEffect(() => {
     const verifyuser = async () => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        setUser(null);
+        return;
+      }
       try {
-        const res = await axios.get("https://mynotes-app-backend.onrender.com/api/auth/verify",{
+        const res = await axios.get("https://mynotes-app-backend.onrender.com/api/auth/verify", {
           headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
+            Authorization: `Bearer ${token}`,
           },
         });
         if (res.data.success && res.data.user && res.data.user._id) {
