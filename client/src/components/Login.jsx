@@ -19,13 +19,6 @@ const Login = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    if (password !== confirm) {
-      setError("Passwords do not match.");
-      setSuccess("");
-      setIsLoading(false);
-      return;
-    }
-
     try {
       const res = await axios.post("https://mynotes-app-backend.onrender.com/api/auth/login", {
         email,
